@@ -1,0 +1,311 @@
+*, ::after, ::before {
+  box-sizing: unset; }
+
+body {
+  font-size: 14px;
+  height: 2000px;
+  background-color: #fff; }
+
+ol, ul {
+  list-style: none; }
+
+a {
+  font-size: 14px; }
+
+/*a
+ * &:active,&:focus,&:hover
+ * 	color: #fff
+ * 	background-color: $verde-main
+ * &:link,&:visited
+ * 	color: $verde-main
+ * 	text-decoration: none
+ * 	font-weight: 700
+ *
+ */
+.navbar-nc {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  width: 100%;
+  background-color: #f7f7f7;
+  padding: 12px 0 0; }
+  @media screen and (min-width: 768px) {
+    .navbar-nc {
+      padding: 20px 0 0; } }
+
+.nav-container {
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+  box-sizing: border-box; }
+
+.nav-container, .wrapper {
+  padding: 0 10px; }
+  @media screen and (min-width: 768px) {
+    .nav-container, .wrapper {
+      padding: 0 12px; } }
+  @media screen and (min-width: 1024px) {
+    .nav-container, .wrapper {
+      padding: 0 15px; } }
+  @media screen and (min-width: 1280px) {
+    .nav-container, .wrapper {
+      padding: 0 20px; } }
+
+.wrapper {
+  width: calc(100%*12/12 - .01px); }
+
+#header {
+  float: left;
+  position: relative;
+  width: 100%; }
+
+#logo {
+  position: relative;
+  float: left;
+  top: 3px;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 18px;
+  background-size: contain;
+  background-color: #f7f7f7; }
+  @media screen and (min-width: 768px) {
+    #logo {
+      top: -2px;
+      width: 56px;
+      height: 56px;
+      margin-bottom: 12px; } }
+  @media screen and (min-width: 992px) {
+    #logo {
+      width: 62px;
+      height: 62px; } }
+  #logo img {
+    max-width: 100%;
+    height: auto; }
+
+#nav {
+  position: relative;
+  clear: left; }
+  @media screen and (min-width: 992px) {
+    #nav {
+      float: left;
+      clear: none;
+      margin-left: 26px;
+      margin-top: 27px; } }
+  #nav a {
+    font-weight: 400; }
+  #nav .nav_menu {
+    display: block;
+    height: 0;
+    clear: both;
+    -webkit-transition: all 250ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 250ms cubic-bezier(0.42, 0, 0.58, 1);
+    width: 100vw;
+    margin-left: -20px;
+    overflow: hidden; }
+    @media screen and (min-width: 768px) {
+      #nav .nav_menu {
+        overflow: visible;
+        height: auto;
+        margin-left: -8px;
+        width: auto; } }
+    @media screen and (min-width: 992px) {
+      #nav .nav_menu {
+        margin-left: 0; } }
+  #nav ul {
+    overflow: hidden;
+    margin: 0;
+    padding: 6% 0;
+    background: #1e1e1e; }
+    @media screen and (min-width: 768px) {
+      #nav ul {
+        overflow: visible;
+        padding: 0;
+        background: 0 0; } }
+  #nav li {
+    margin: 0; }
+    @media screen and (min-width: 480px) {
+      #nav li {
+        float: left;
+        width: 50%; } }
+    @media screen and (min-width: 768px) {
+      #nav li {
+        display: block;
+        margin: 0 1px 0 0;
+        width: auto;
+        position: relative; } }
+  @media screen and (min-width: 768px) {
+    #nav .null_left, #nav .null_right {
+      display: none; } }
+  #nav .tab a {
+    text-decoration: none;
+    display: block;
+    line-height: 1;
+    padding: 3% 16%;
+    color: #fff; }
+    @media screen and (min-width: 480px) {
+      #nav .tab a {
+        padding: 3% 8%; } }
+    @media screen and (min-width: 768px) {
+      #nav .tab a {
+        float: left;
+        padding: 1em 0.65em;
+        color: #242221; } }
+    @media screen and (min-width: 992px) {
+      #nav .tab a {
+        border-bottom: 3px solid #f7f7f7;
+        padding: 1em; } }
+    #nav .tab a strong {
+      font-weight: 400;
+      font-size: 1em;
+      text-transform: uppercase;
+      letter-spacing: 0.18em; }
+      @media screen and (min-width: 768px) {
+        #nav .tab a strong {
+          line-height: 1; } }
+      @media screen and (min-width: 992px) {
+        #nav .tab a strong {
+          line-height: 1.136364; } }
+  #nav .tab .menuHoverWrapper {
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    height: 0px;
+    display: none;
+    top: 46px;
+    z-index: 1; }
+    @media screen and (min-width: 768px) {
+      #nav .tab .menuHoverWrapper {
+        display: block;
+        margin-left: -16px; } }
+    @media screen and (min-width: 992px) {
+      #nav .tab .menuHoverWrapper {
+        margin-left: -112px; } }
+    @media screen and (min-width: 1024px) {
+      #nav .tab .menuHoverWrapper {
+        margin-left: -118px; } }
+    @media screen and (min-width: 1280px) {
+      #nav .tab .menuHoverWrapper {
+        margin-left: -128px; } }
+    @media screen and (min-width: 1360px) {
+      #nav .tab .menuHoverWrapper {
+        margin-left: calc((-100vw + 1360px) / 2 - 128px); } }
+  @media screen and (min-width: 768px) {
+    #nav .open a {
+      border-bottom-color: #1e1e1e;
+      background-color: #1e1e1e; }
+      #nav .open a strong {
+        color: #f7f7f7; } }
+
+#nav.open .hamburger {
+  background-color: #1e1e1e;
+  border-color: #1e1e1e; }
+  #nav.open .hamburger:before {
+    top: 40%;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg); }
+  #nav.open .hamburger:after {
+    top: 40%;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
+#nav.open .nav_control a:active .hamburger, #nav.open .nav_control a:focus .hamburger {
+  background-color: #1e1e1e;
+  border-color: #1e1e1e; }
+
+.nav_control {
+  position: absolute;
+  top: -44px;
+  right: 10px;
+  width: 44px;
+  height: 44px; }
+  @media screen and (min-width: 768px) {
+    .nav_control {
+      display: none; } }
+  .nav_control .hamburger {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #85c226;
+    border: 12px solid #f7f7f7; }
+    .nav_control .hamburger:after, .nav_control .hamburger:before {
+      content: "";
+      position: absolute;
+      top: 20%;
+      left: 0;
+      width: 100%;
+      height: 20%;
+      background-color: #f7f7f7;
+      -webkit-transition: all ease 0.2s;
+      transition: all ease 0.2s;
+      -webkit-transform: translateZ(0); }
+    .nav_control .hamburger:after {
+      top: 60%; }
+
+#menus {
+  width: 100%;
+  margin: -1px 0 0;
+  background-color: #1e1e1e;
+  display: none;
+  position: relative; }
+  @media screen and (min-width: 768px) {
+    #menus {
+      display: block;
+      margin-top: 110px; } }
+  @media screen and (min-width: 992px) {
+    #menus {
+      margin-top: 73px; } }
+  #menus .menuContainer {
+    width: 100%;
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0 10px; }
+    @media screen and (min-width: 768px) {
+      #menus .menuContainer {
+        padding: 0 12px; } }
+    @media screen and (min-width: 1024px) {
+      #menus .menuContainer {
+        padding: 0 15px; } }
+    @media screen and (min-width: 1280px) {
+      #menus .menuContainer {
+        padding: 0 20px; } }
+  #menus .fields {
+    clear: both;
+    display: none; }
+    @media screen and (min-width: 768px) {
+      #menus .fields {
+        font-size: 0.928571em;
+        line-height: 1.230769; } }
+    @media screen and (min-width: 768px) {
+      #menus .fields .region {
+        box-sizing: border-box;
+        padding: 0 12px;
+        position: relative;
+        float: left; } }
+    @media screen and (min-width: 1024px) {
+      #menus .fields .region {
+        padding: 0 15px; } }
+    @media screen and (min-width: 1280px) {
+      #menus .fields .region {
+        padding: 0 20px; } }
+    @media screen and (min-width: 768px) {
+      #menus .fields .size4of5 {
+        width: 80%; } }
+    @media screen and (min-width: 768px) {
+      #menus .fields .menu_content {
+        background: #1e1e1e;
+        padding: 0 0 0 110px; } }
+
+.blocks {
+  list-style: none;
+  display: block;
+  clear: both;
+  margin-left: -20px; }
+  .blocks:after {
+    display: block;
+    clear: both; }
+  .blocks li {
+    display: block;
+    clear: both; }
+
+/*# sourceMappingURL=styles.css.map */
